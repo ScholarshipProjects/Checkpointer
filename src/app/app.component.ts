@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app works!';
+  title: string = 'Team Checkpointer';
+  lat: number = 42.6852777;
+  lng: number = 23.3192981;
+  zoom: number = 18;
+  //42.6852777,23.319298
 }
