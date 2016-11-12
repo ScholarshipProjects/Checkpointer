@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'Team Checkpointer';
+  test: string = 'test';
   lat: number = 42.6852777;
   lng: number = 23.3192981;
   zoom: number = 18;
