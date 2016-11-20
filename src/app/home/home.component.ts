@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AgmCoreModule } from 'angular2-google-maps/core';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+
+  
   constructor() { }
 
   ngOnInit() {

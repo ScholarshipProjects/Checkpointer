@@ -1,3 +1,5 @@
+import { marker } from '../../shared/marker';
+import { CheckpointsService } from '../checkpoints.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActionsComponent implements OnInit {
 
-  constructor() { }
+  markers: marker[];
+   
+  constructor(cs: CheckpointsService) {
+    this.markers = cs.getMarkers();
+   }
 
   ngOnInit() {
   }

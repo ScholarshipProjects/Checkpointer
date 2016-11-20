@@ -1,12 +1,12 @@
 <div class="row">
-  <div class="col-sm-12">
-    <div class="card">
-      <img class="card-img-top" src="http://placehold.it/450x150" alt="Card image cap">
-      <div class="card-block">
-        <h4 class="card-title">Sample Checkpoint</h4>
-        <p class="card-text">Delivery info for package.</p>
-        <a href="#" class="btn btn-primary">Check</a>
-      </div>
+    <div class="col-sm-12">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let marker of markers">
+                    <td>{{marker.lat}}</td>
+                    <td>{{marker.lng}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-  </div>
 </div>
